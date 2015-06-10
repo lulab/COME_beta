@@ -20,39 +20,34 @@ COME doesn't need installation.
 2. Usage
 ========
 
-  /path/to/COME/bin/folder/COME_all.sh /path/to/your/transcripts.gtf  /path/to/your/output  /path/to/COME/bin/folder  model_species_name   overlapping_ratio
+/path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name    overlapping_ratio
   
-Here I explain aach item in the command line: 
 
-  1)  /path/to/COME/bin/folder is the folder that you kept downloaded COME's bin.
+  2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
 
-  2)  /path/to/COME/bin/folder/COME_all.sh is COME's main program.
+  2.2)  /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
-  3)  /path/to/your/transcripts.gtf is your input gtf file. Better to be given with full-path names.
+  2.3)  /path/to/your/transcripts.gtf is your input gtf file. Should be given with absolute path. The input gtf file should be:
 
-  4)  /path/to/your/output is a folder that will be created (if the user didn't create it already) to save your output file.
+    2.3.1)  as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"
 
-  5)  model_species_name is allowed for now only one of these five names: human, mouse, fly, worm and plant.
+    2.3.2)  chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
-  6)  overlapping_ratio is the ratio to overlap your input transcript with precalculated coding potential files. Default is 0.5. should be 0.02<=overlapping_ratio<=1
+  2.4)  /path/to/your/output is a folder that will be created (if the user didn't create it already) to save your output file(s).
+
+  2.5)  model_species_name is one of these five names: human, mouse, fly, worm and plant. It specifies which species' CPL and model files should be used to calculate your input transcripts
+
+  2.6)  overlapping_ratio is the ratio to overlap your input transcript with precalculated coding potential files. Default is 0.5. should be 0.02<=overlapping_ratio<=1
   
-An example:
+  2.7)  An example:
 
-  if you download COME to /user/woring/directory
-
-  your input transcript file is /user/transcripts/file.gtf, and it's part of human's trancriptome.
-
-  you would like to save your output to this folder: /user/assigned/output/folder
-
+Assuming I download the bin folder in /my/working/directory, and unzipped the downloaded CPL files and moved them into /my/working/directory/bin. I want to predict human transcripts, /my/test/transcript.gtf, the output files should be saved in
+/my/output/directory;
+  
   The command would be: 
   
-  /user/woring/directory/COME_all.sh /user/transcripts/file.gtf  /user/assigned/output/folder  /user/woring/directory human 0.5
+/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human    0.5
 
-The input gtf file should be:
-
-  1)  as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"
-
-  2)  chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
 
 3. Citing RNAcode
