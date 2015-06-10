@@ -20,7 +20,7 @@ COME doesn't need installation.
 2. Usage
 ========
 
-/path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name    overlapping_ratio
+    /path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name    overlapping_ratio
   
 
   2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
@@ -28,10 +28,10 @@ COME doesn't need installation.
   2.2)  /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
   2.3)  /path/to/your/transcripts.gtf is your input gtf file. Should be given with absolute path. The input gtf file should be:
-
-    2.3.1)  as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"
-
-    2.3.2)  chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
+  
+  2.3.1)  as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"
+  
+  2.3.2)  chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
   2.4)  /path/to/your/output is a folder that will be created (if the user didn't create it already) to save your output file(s).
 
@@ -46,7 +46,7 @@ Assuming I download the bin folder in /my/working/directory, and unzipped the do
   
   The command would be: 
   
-/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human    0.5
+    /my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human    0.5
 
 
 
