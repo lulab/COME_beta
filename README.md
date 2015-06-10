@@ -1,4 +1,4 @@
-# COME_test2
+
 COME --- Calculate coding potential for transcripts.
 
 0. About COME
@@ -11,25 +11,14 @@ Since the level 1 learning model integrated lots of features, which is a very co
 1. Installation and Requirements
 ===============
 
-COME requires R(>=2.15.2) and its package "randomForest" and "rhd5" pre-installed in a linux system.
+COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
 COME doesn't need installation. 
   First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory. 
   Second, users need to download and unzip the CPL files (http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
-
-
-
-
-
-
-
-
-
-
-Requriements: Linux based system, R(>=2.15.2) and its package "randomForest" and "rhd5", awk (should be pre-installed for almost all linux systems)
-
-To use COME, users need to download the bin folder into his working directory. Then the user needs to type in these commands:
+2. Usage
+========
 
   /path/to/COME/bin/folder/COME_all.sh /path/to/your/transcripts.gtf  /path/to/your/output  /path/to/COME/bin/folder  model_species_name   overlapping_ratio
   
@@ -64,3 +53,15 @@ The input gtf file should be:
   1)  as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"
 
   2)  chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
+
+
+3. Citing RNAcode
+=================
+
+pubmed DOI...
+
+
+4. Contact
+==========
+
+hulongptp@gmail.com
