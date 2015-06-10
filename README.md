@@ -59,4 +59,4 @@ pubmed DOI...
 4. Contact
 ==========
 
-hulongptp@gmail.com
+Long Hu <hulongptp@gmail.com>
