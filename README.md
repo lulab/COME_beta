@@ -11,18 +11,16 @@ Since the level 1 learning model integrated lots of features, which is a very co
 1. Installation and Requirements
 ===============
 
-COME doesn't need installation. Users need to download the bin folder (which contains source codes and level 2 models) into his working directory. Also, users need to download the CPL files into the bin folder under your working directory.
-R(>=2.15.2) and its package "randomForest" and "rhd5"
+COME requires R(>=2.15.2) and its package "randomForest" and "rhd5" pre-installed in a linux system.
+
+COME doesn't need installation. 
+  First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory. 
+  Second, users need to download and unzip the CPL files (http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
 
 
-You can compile and install RNAcode like this:
 
-# ./configure
-# make
-# make install (as root)
 
-See INSTALL for details and more advanced installation options.
 
 
 
