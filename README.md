@@ -1,9 +1,33 @@
 # COME_test2
-my test version 2 of COME software
+COME --- Calculate coding potential for transcripts.
 
-COME is designed to calculate COding potential from Multiple fEatures for transcripts. The ariticle is published in "XXX"
+0. About COME
+=============
 
-COME accectps a gtf-format file as input, predicts the input transcripts as either coding ones or non-coding ones. In brief, COME builds two models. The level 1 learning model is to integrate multiple features (sequence, structure, expression and histone modification features) into a one score---the coding potential landscape. The leve 2 learning model is to overlap the input transcript with the coding potential landscape and predict it to be a coding transcript or a non-coding transcript. Since the level 1 learning model integrated lots of features, which is a very complicated process, we pre-calculated the coding potential landscape for five model species: human (hg19), mouse (mm10), fly (dm3), worm (ce10) and plant (TAIR10). We also included the level 2 models for these species.
+COME is a two-level machine-learning method, which uses multiple features of a transcript to predict its coding potential.The first level model is to generate a coding potential landscape, which describes the coding potential fluctuation of bins (100-nt intervals with 50-nt overlap) along the whole genome. The coding potential landscape (CPL) is integrated from multiple features (sequence, structure, expression and histone modification features) of bins. The second level learning model is to predict an input transcript to be a coding transcript or a non-coding transcript based on its overlapped CPL's pattern. 
+
+Since the level 1 learning model integrated lots of features, which is a very complicated process, we pre-calculated the CPL for five model species: human (hg19), mouse (mm10), fly (dm3), worm (ce10) and plant (TAIR10). The known coding and non-coding trasncripts' CPL patterns are also learned and stored in our level 2 models for these species.
+
+1. Installation and Requirements
+===============
+
+COME doesn't need installation. Users need to download the bin folder (which contains source codes and level 2 models) into his working directory. Also, users need to download the CPL files into the bin folder under your working directory.
+R(>=2.15.2) and its package "randomForest" and "rhd5"
+
+
+
+You can compile and install RNAcode like this:
+
+# ./configure
+# make
+# make install (as root)
+
+See INSTALL for details and more advanced installation options.
+
+
+
+
+
 
 Requriements: Linux based system, R(>=2.15.2) and its package "randomForest" and "rhd5", awk (should be pre-installed for almost all linux systems)
 
