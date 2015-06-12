@@ -1,5 +1,5 @@
 
-# COME --- Calculate **co**ding potential from __m__ultiple __f__eatures.
+# COME --- Calculate COding potential from Multiple Features.
 
 # 0. About COME
 
@@ -11,9 +11,9 @@ Since the level 1 learning model integrated lots of features, which is a very co
 
 COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
-COME doesn't need installation. 
-  First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory. 
-  Second, users need to download and unzip the CPL files (http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
+## COME doesn't need installation.  
+First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory.  
+Second, users need to download and unzip the CPL files (http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
 # 2. Usage
 
