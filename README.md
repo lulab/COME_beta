@@ -13,7 +13,7 @@ COME also is avaliable as a [webserver](http://RNAfinder.ncrnalab.org/COME)
 COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
 #### COME doesn't need installation.    
-1. users need to download the [bin folder](https://github.com/rnaseqsucks/COME_test2/edit/master/README.md) (which contains source codes and level 2 models) from the github into his working directory.    
+1. users need to download the [scripts and models](https://github.com/rnaseqsucks/COME_test2) (which contains source codes and level 2 models) from the github into his working directory. Make sure all the files are in one folder, hereafter, we name this folder the bin folder.    
 2. Second, users need to download and unzip the [CPL files](http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
 # 2. Usage
