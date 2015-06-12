@@ -24,25 +24,25 @@ COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed
 _____
 * `/path/to/COME/bin/folder` is the folder where you kept downloaded COME's scripts and models, namely, the _bin folder_.
 
-* _/path/to/COME/bin/folder/COME_all.sh_ is COME's main program script.
+* `/path/to/COME/bin/folder/COME_all.sh` is COME's main program script.
 
-* _/path/to/your/transcripts.gtf_ is your input gtf file. Should be given with absolute path. The input gtf file should be:    
+* `/path/to/your/transcripts.gtf` is your input gtf file. Should be given with absolute path. The input gtf file should be:    
   * as the description of ucsc's [gtf format](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)     
   * chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
-* _/path/to/your/output_                    is a folder that will be created (if the user didn't create it already) to save your output file(s).
+* `/path/to/your/output` is a folder that will be created (if the user didn't create it already) to save your output file(s).
 
-* _model_species_name_                      is one of these five names: human, mouse, fly, worm and plant. It specifies which species' CPL and model files should be applied to your calculation
+* `model_species_name` is one of these five names: human, mouse, fly, worm and plant. It specifies which species' CPL and model files should be applied to your calculation
 
-* _overlapping_ratio_                       is the ratio to overlap your input transcript with precalculated coding potential files. Default is 0.5. should be 0.02<=overlapping_ratio<=1
+* `overlapping_ratio` is the ratio to overlap your input transcript with precalculated coding potential files. Default is 0.5. should be 0.02<=overlapping_ratio<=1
 ______  
 
 #### An example:
 
-Assuming I download the [scripts and models](https://github.com/rnaseqsucks/COME_test2) into _/my/working/directory/bin_, and unzipped the downloaded CPL files and moved them into _/my/working/directory/bin_. I want to predict human transcripts, _/my/test/transcript.gtf_, the output files should be saved in _/my/output/directory_;  
+Assuming I download the [scripts and models](https://github.com/rnaseqsucks/COME_test2) into `/my/working/directory/bin`, and unzipped the downloaded CPL files and moved them into `/my/working/directory/bin`. I want to predict human transcripts, `/my/test/transcript.gtf`, the output files should be saved in `/my/output/directory`;  
 The command would be: 
-  
-    /my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human    0.5
+
+`/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human    0.5`
 
 
 
