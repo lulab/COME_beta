@@ -12,9 +12,9 @@ COME also is avaliable as a [webserver](http://RNAfinder.ncrnalab.org/COME)
 
 COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
-#### COME doesn't need installation.  
-  First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory.  
-  Second, users need to download and unzip the [CPL files](http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
+#### COME doesn't need installation.    
+1. users need to download the [bin folder](https://github.com/rnaseqsucks/COME_test2/edit/master/README.md) (which contains source codes and level 2 models) from the github into his working directory.    
+2. Second, users need to download and unzip the [CPL files](http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
 # 2. Usage
 
@@ -26,7 +26,7 @@ _____
 * /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
 * /path/to/your/transcripts.gtf is your input gtf file. Should be given with absolute path. The input gtf file should be:    
-  * as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"     
+  * as the description of ucsc's [gtf format](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)     
   * chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
 * /path/to/your/output is a folder that will be created (if the user didn't create it already) to save your output file(s).
