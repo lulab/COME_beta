@@ -1,5 +1,5 @@
 
-# COME --- Calculate coding potential for transcripts.
+# COME --- Calculate __co__ding potential from __m__ultiple __f__eatures.
 
 # 0. About COME
 
