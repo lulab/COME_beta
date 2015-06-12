@@ -1,13 +1,13 @@
 
-#COME --- Calculate coding potential for transcripts.
+# COME --- Calculate coding potential for transcripts.
 
-#0. About COME
+# 0. About COME
 
 COME is a two-level machine-learning method, which uses multiple features of a transcript to predict its coding potential.The first level model is to generate a coding potential landscape, which describes the coding potential fluctuation of bins (100-nt intervals with 50-nt overlap) along the whole genome. The coding potential landscape (CPL) is integrated from multiple features (sequence, structure, expression and histone modification features) of bins. The second level learning model is to predict an input transcript to be a coding transcript or a non-coding transcript based on its overlapped CPL's pattern. 
 
 Since the level 1 learning model integrated lots of features, which is a very complicated process, we pre-calculated the CPL for five model species: human (hg19), mouse (mm10), fly (dm3), worm (ce10) and plant (TAIR10). The known coding and non-coding trasncripts' CPL patterns are also learned and stored in our level 2 models for these species.
 
-#1. Installation and Requirements
+# 1. Installation and Requirements
 
 COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
@@ -15,12 +15,12 @@ COME doesn't need installation.
   First, users need to download the bin folder (which contains source codes and level 2 models) from the github into his working directory. 
   Second, users need to download and unzip the CPL files (http://lulab.life.tsinghua.edu.cn/RNAfinder/come/CPL_files.tar.gz). The unzipped files need to be placed in the bin folder under your working directory.
 
-#2. Usage
+# 2. Usage
 
     /path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name    overlapping_ratio
   
 
-  ###2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
+  ### 2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
 
   2.2)  /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
@@ -47,13 +47,13 @@ Assuming I download the bin folder in /my/working/directory, and unzipped the do
 
 
 
-3. Citing RNAcode
+# 3. Citing RNAcode
 =================
 
 pubmed DOI...
 
 
-4. Contact
+# 4. Contact
 ==========
 
 Long Hu <hulongptp@gmail.com>
