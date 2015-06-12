@@ -20,7 +20,7 @@ COME doesn't need installation.
     /path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name    overlapping_ratio
   
 
-  2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
+  ###2.1)  /path/to/COME/bin/folder is the folder where you kept downloaded COME's bin.
 
   2.2)  /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
