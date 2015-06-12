@@ -25,8 +25,9 @@ _____
 
 * /path/to/COME/bin/folder/COME_all.sh is COME's main program script.
 
-* /path/to/your/transcripts.gtf is your input gtf file. Should be given with absolute path. The input gtf file should be:as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"  
-* 2. chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
+* /path/to/your/transcripts.gtf is your input gtf file. Should be given with absolute path. The input gtf file should be:    
+  * as the description from "http://genome.ucsc.edu/FAQ/FAQformat.html#format4"     
+  * chromosome names should be in lower and abbreviate case, e.g. (chr1, chrX, etc), except for worm genome, which used roman number: chrI, chrII, chrIII, chrIV, chrX, chrY
 
 * /path/to/your/output is a folder that will be created (if the user didn't create it already) to save your output file(s).
 
