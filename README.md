@@ -15,7 +15,7 @@ COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed
 
 #### COME doesn't need installation.    
 1. users need to download the [scripts and models](https://github.com/lulab/COME) (which contains source codes and level 2 models) from the github into his working directory. Make sure all the files are in one folder, hereafter, we name this folder the _bin folder_.    
-2. Second, users need to download the CPL files ([human CPL](http://1drv.ms/1KPrj89/human.CPL); [mouse CPL](http://1drv.ms/1KPrj89/mouse.CPL); [fly CPL](http://1drv.ms/1KPrj89/fly.CPL); [worm CPL](http://1drv.ms/1KPrj89/wrom.CPL); [plant CPL](http://1drv.ms/1KPrj89/plant.CPL)). The files need to be placed in the bin folder under your working directory.
+2. Second, users need to download the CPL files ([human CPL](http://1drv.ms/1GG4eTA/human.CPL); [mouse CPL](http://1drv.ms/1GG4eTA/mouse.CPL); [fly CPL](http://1drv.ms/1GG4eTA/fly.CPL); [worm CPL](http://1drv.ms/1GG4eTA/wrom.CPL); [plant CPL](http://1drv.ms/1GG4eTA/plant.CPL)). The files need to be placed in the bin folder under your working directory.
 
 # 2. Usage
 
