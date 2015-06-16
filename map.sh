@@ -1,25 +1,21 @@
 #!/bin/bash
 # Print help message if no parameter given
 if [ "$#" == 0 ];then
-echo "Usage: ./run.sh input_file output_dir  RATIO output_file
+echo "Usage: ./map.sh input_file output_dir output_file
 input_file is the transcript.gtf file
 output_dir would save all the results we generate
-RATIO is the ratio mapped to a 50nt bin, should be [0.02,1.00];
+output_file is the output file
 "
 exit;
 fi
 ########################	input_parameters
 input_file=$1
 output_dir=$2
-RATIO=$3
-output_file=$4
+output_file=$3
 
 ########################	pre-defined parameters
  file=${input_file##*/};
-
-  if [ `expr "$RATIO" ">" "1.00"` -eq "1"	]; then echo "too big ratio, resetting ratio to 1;"; 		RATIO=1;
-elif [ `expr "$RATIO" "<" "0.02"` -eq "1"	]; then echo "too small ratio, resetting ratio to 0.02;"; 	RATIO=0.02;
-fi
+RATIO=0.5
 
 ########################	step1: overlap with bins
 [[ -d $output_dir/$file ]] || mkdir -p $output_dir/$file;
