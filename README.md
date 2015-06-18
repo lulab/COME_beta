@@ -1,9 +1,9 @@
 
-# COME --- calculate COding potential from Multiple Features.
+# COME --- calculate COding potential from Multiple fEatures.
 
 # 0. About COME
 
-COME is a two-level machine-learning method, which uses multiple features of a transcript to predict its coding potential.The first level model is to generate a coding potential landscape, which describes the coding potential fluctuation of bins (100-nt intervals with 50-nt overlap) along the whole genome. The coding potential landscape (CPL) is integrated from multiple features (sequence, structure, expression and histone modification features) of bins. The second level learning model is to predict an input transcript to be a coding transcript or a non-coding transcript based on its overlapped CPL's pattern. 
+COME (coding potential calculator based on multiple features) is a computational tool that predicts the coding potential for a given transcript, which is not required to be conserved or fully assembled. It is a two-level machine-learning method, which uses multiple features of a transcript to predict its coding potential.The first level model is to generate a coding potential landscape, which describes the coding potential fluctuation of bins (100-nt intervals with 50-nt overlap) along the whole genome. The coding potential landscape (CPL) is integrated from multiple features (sequence, structure, expression and histone modification features) of bins. The second level learning model is to predict an input transcript to be a coding transcript or a non-coding transcript based on its overlapped CPL's pattern. 
 
 Since the level 1 learning model integrated lots of features, which is a very complicated process, we pre-calculated the CPL for five model species: human (hg19), mouse (mm10), fly (dm3), worm (ce10) and plant (TAIR10). The known coding and non-coding trasncripts' CPL patterns are also learned and stored in our level 2 models for these species.
 
@@ -48,7 +48,7 @@ The command would be:
 # 3. Citing RNAcode
 =================
 
-pubmed DOI...
+Hu L., Wei Y., Hu B. and Lu ZJ,   COME: coding potential estimator for novel transcripts using multiple features,   2015
 
 
 # 4. Contact
