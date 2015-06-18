@@ -1,7 +1,7 @@
 
 # COME --- calculate COding potential from Multiple fEatures.
 
-# 0. About COME
+## 0. About COME
 
 COME (coding potential calculator based on multiple features) is a computational tool that predicts the coding potential for a given transcript, which is not required to be conserved or fully assembled. It is a two-level machine-learning method, which uses multiple features of a transcript to predict its coding potential.The first level model is to generate a coding potential landscape, which describes the coding potential fluctuation of bins (100-nt intervals with 50-nt overlap) along the whole genome. The coding potential landscape (CPL) is integrated from multiple features (sequence, structure, expression and histone modification features) of bins. The second level learning model is to predict an input transcript to be a coding transcript or a non-coding transcript based on its overlapped CPL's pattern. 
 
@@ -9,7 +9,7 @@ Since the level 1 learning model integrated lots of features, which is a very co
 
 COME also is avaliable as a [webserver](http://RNAfinder.ncrnalab.org/COME)  
 
-# 1. Installation and Requirements
+## 1. Installation and Requirements
 
 COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed in a linux system.
 
@@ -17,7 +17,7 @@ COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed
 1. users need to download the [scripts and models](https://github.com/lulab/COME) (which contains source codes and level 2 models) from the github into his working directory. Make sure all the files are in one folder, hereafter, we name this folder the _bin folder_.    
 2. Second, users need to download your species' CPL file from the [download page](http://1drv.ms/1GG4eTA). The files need to be placed in the bin folder under your working directory.
 
-# 2. Usage
+## 2. Usage
 
 	/path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name
   
@@ -29,7 +29,7 @@ _____
 * `/path/to/your/transcripts.gtf` is your input gtf file. Should be given with absolute path. The input gtf file should be:    
   * as the description of ucsc's [gtf format](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)     
   * Users can check the input gtf files using our provided [check_gtf.sh](https://github.com/lulab/COME/check_gtf.sh) script.   
-  * `/path/to/COME/bin/folder/check_gtf.sh	/path/to/your/transcripts.gtf	model_species_name`
+  * 	/path/to/COME/bin/folder/check_gtf.sh	/path/to/your/transcripts.gtf	model_species_name
 
 * `/path/to/your/output` is a folder that will be created (if the user didn't create it already) to save your output file(s).
 
@@ -42,16 +42,16 @@ ______
 Assuming I download the [scripts and models](https://github.com/rnaseqsucks/COME_test2) into `/my/working/directory/bin`, and unzipped the downloaded CPL files and moved them into `/my/working/directory/bin`. I want to predict human transcripts, `/my/test/transcript.gtf`, the output files should be saved in `/my/output/directory`;  
 The command would be: 
 
-`/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human`
+	/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human
 
 
-# 3. Citing RNAcode
+## 3. Citing RNAcode
 =================
 
 Hu L., Wei Y., Hu B. and Lu ZJ,   COME: coding potential estimator for novel transcripts using multiple features,   2015
 
 
-# 4. Contact
+## 4. Contact
 ==========
 
 Long Hu <hulongptp@gmail.com>
