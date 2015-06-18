@@ -19,7 +19,7 @@ COME requires R(>=2.15.2) and R packages "randomForest" and "rhd5" pre-installed
 
 # 2. Usage
 
-`/path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name`
+	/path/to/COME/bin/folder/COME_all.sh    /path/to/your/transcripts.gtf    /path/to/your/output    /path/to/COME/bin/folder    model_species_name
   
 _____
 * `/path/to/COME/bin/folder` is the folder where you kept downloaded COME's scripts and models, namely, the _bin folder_.
