@@ -45,7 +45,7 @@ The command would be:
 	/my/working/directory/bin/COME_all.sh    /my/test/transcript.gtf    /my/output/directory    /my/working/directory/bin    human
 
 
-## 3. Citing RNAcode
+## 3. Citing COME
 =================
 
 Hu L., Wei Y., Hu B. and Lu ZJ,   COME: coding potential estimator for novel transcripts using multiple features,   2015
