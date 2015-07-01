@@ -20,11 +20,11 @@ spe=$4
 file=${input_file##*/};
 
 
-if   [ "$spe"   ==      "human" ];then CUTOFF=0.533;Model=$bin_dir/human.chr.models;	CPL=$bin_dir/human.CPL;
-elif [ "$spe"   ==      "mouse" ];then CUTOFF=0.575;Model=$bin_dir/mouse.chr.models;	CPL=$bin_dir/mouse.CPL;
-elif [ "$spe"   ==      "worm"  ];then CUTOFF=0.537;Model=$bin_dir/worm.chr.models;	CPL=$bin_dir/worm.CPL;
-elif [ "$spe"   ==      "fly"   ];then CUTOFF=0.489;Model=$bin_dir/fly.chr.models;	CPL=$bin_dir/fly.CPL;
-elif [ "$spe"   ==      "plant" ];then CUTOFF=0.716;Model=$bin_dir/plant.chr.models;	CPL=$bin_dir/plant.CPL;
+if   [ "$spe"   ==      "human" ];then CUTOFF=0.623;Model=$bin_dir/human.chr.models;	CPL=$bin_dir/human.CPL;
+elif [ "$spe"   ==      "mouse" ];then CUTOFF=0.524;Model=$bin_dir/mouse.chr.models;	CPL=$bin_dir/mouse.CPL;
+elif [ "$spe"   ==      "worm"  ];then CUTOFF=0.924;Model=$bin_dir/worm.chr.models;	CPL=$bin_dir/worm.CPL;
+elif [ "$spe"   ==      "fly"   ];then CUTOFF=0.888;Model=$bin_dir/fly.chr.models;	CPL=$bin_dir/fly.CPL;
+elif [ "$spe"   ==      "plant" ];then CUTOFF=0.925;Model=$bin_dir/plant.chr.models;	CPL=$bin_dir/plant.CPL;
 else echo "wrong speices specified, only human mouse fly worm plant are avilable now."; exit;
 fi
 
@@ -45,7 +45,7 @@ if($2>=cutoff){
 }}'     $output_dir/$file/$file.foo3    >>      $output_dir/$file.output;
 
 ####	clean
-#! [[ -d $output_dir/$file ]] || rm -r -f $output_dir/$file;
+! [[ -d $output_dir/$file ]] || rm -r -f $output_dir/$file;
 
 
 
