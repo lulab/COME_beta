@@ -39,7 +39,7 @@ ______
 
 #### An example:
 
-Assuming I want to predict human transcripts, `/my/test/transcript.gtf`. I would download the [scripts] (https://github.com/rnaseqsucks/COME_test2) into `/my/working/directory/bin`, also downloaded `human.CPL`, `human.chr.models` from the [download page](http://1drv.ms/1GG4eTA) and move them into `/my/working/directory/bin`. And the output files would be saved in `/my/output/directory`;  
+Assuming I want to predict human transcripts, `/my/test/transcript.gtf`. I would download the [scripts] (https://github.com/lulab/COME) into `/my/working/directory/bin`, also downloaded `human.CPL`, `human.chr.models` from the [download page](http://1drv.ms/1GG4eTA) and move them into `/my/working/directory/bin`. And the output files would be saved in `/my/output/directory`;  
 The command would be: 
 
 	/my/working/directory/bin/check_gtf.sh   /my/test/transcript.gtf    human
