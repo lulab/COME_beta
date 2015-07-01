@@ -29,7 +29,7 @@ _____
 * `/path/to/your/transcripts.gtf` is your input gtf file. Should be given with absolute path. The input gtf file should be:    
   * as the description of ucsc's [gtf format](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)     
   * Users can check the input gtf files using our provided [check_gtf.sh](https://github.com/lulab/COME/check_gtf.sh) script.   
-  * 		/path/to/COME/bin/folder/check_gtf.sh	/path/to/your/transcripts.gtf	model_species_name
+  * `/path/to/COME/bin/folder/check_gtf.sh	/path/to/your/transcripts.gtf	model_species_name`
 
 * `/path/to/your/output` is a folder that will be created (if the user didn't create it already) to save your output file(s).
 
