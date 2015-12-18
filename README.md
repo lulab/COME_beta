@@ -49,7 +49,7 @@ The command would be:
 ## 3. Citing COME
 =================
 
-Hu L., Wei Y., Hu B. and Lu ZJ,   COME: coding potential estimator for novel transcripts using multiple features,   2015
+Hu L., Hu B. and Lu ZJ,  COME: a robust coding potential calculator for lncRNA identification and characterization based on multiple features,   2015
 
 
 ## 4. Contact
